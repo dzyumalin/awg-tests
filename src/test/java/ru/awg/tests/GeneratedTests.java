@@ -19,8 +19,10 @@ public class GeneratedTests extends TestBase {
         step("Open url 'https://www.awg.ru/'", () ->
                 open("https://www.awg.ru/"));
 
-        step("Проверка надписи \"Увеличим продажи и конверсию с помощью ускорения сайта\"", () -> {
-            $(".main-slider").shouldHave(text("Увеличим продажи и конверсию с помощью ускорения сайта"));
+        step("Проверка надписи \"Ведущий веб-интегратор\n" +
+                "для выхода бизнеса на новый уровень\"", () -> {
+            $(".main-slider").shouldHave(text("Ведущий веб-интегратор\n" +
+                    "для выхода бизнеса на новый уровень"));
             step("// todo: just add selenium action");
         });
     }
